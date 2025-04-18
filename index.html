@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offer Hub - Explore Hot Deals</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+    }
+    header {
+      background: linear-gradient(120deg, #4e54c8, #8f94fb);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+      color: #333;
+    }
+    .card-desc {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .card a {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #4e54c8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+    .card a:hover {
+      background: #3c41aa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔥 Explore Trending Offers</h1>
+    <p>Click on an offer below to claim your rewards</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x160?text=Free+Netflix+Card" alt="Netflix Offer">
+      <div class="card-body">
+        <div class="card-title">Get Free Netflix Gift Cards</div>
+        <div class="card-desc">Unlock streaming for free by completing a short task. Limited time only!</div>
+        <a href="offer1.html">Claim Offer</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x160?text=Amazon+Gift+Card" alt="Amazon Offer">
+      <div class="card-body">
+        <div class="card-title">Win $100 Amazon Gift Card</div>
+        <div class="card-desc">Complete 1 offer to enter the lucky draw. Fast and easy!</div>
+        <a href="offer2.html">Claim Offer</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x160?text=Free+Mobile+Recharge" alt="Recharge Offer">
+      <div class="card-body">
+        <div class="card-title">Free Mobile Recharge</div>
+        <div class="card-desc">Participate in a quick survey and get instant recharge rewards.</div>
+        <a href="offer3.html">Claim Offer</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
