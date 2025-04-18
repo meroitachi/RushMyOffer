@@ -19,8 +19,8 @@
       border-radius: 20px;
       padding: 30px 25px;
       box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-      max-width: 400px;
-      width: 90%;
+      max-width: 500px;
+      width: 95%;
       text-align: center;
       position: relative;
       animation: floatIn 0.5s ease-in-out;
@@ -29,10 +29,18 @@
       from { transform: translateY(30px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
-    .container img {
+    .image-wrapper {
       width: 100%;
+      max-height: 400px;
+      overflow: hidden;
       border-radius: 15px;
       margin-bottom: 20px;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
     }
     h1 {
       font-size: 1.8rem;
@@ -80,7 +88,9 @@
 <body>
   <div class="container">
     <div class="flash">Limited Time</div>
-    <img src="https://via.placeholder.com/400x200" alt="Offer Image">
+    <div class="image-wrapper">
+      <img src="https://via.placeholder.com/600x400" alt="Offer Banner">
+    </div>
     <h1>Get Your Free Gift Now!</h1>
     <p>Complete a short task and receive a special reward. This offer won't last long — act fast!</p>
     <a href="https://your-cpa-link.com" class="cta-button" target="_blank">Claim Offer</a>
