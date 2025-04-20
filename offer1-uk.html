@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Offer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 25px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 95%;
+      text-align: center;
+      position: relative;
+      animation: floatIn 0.5s ease-in-out;
+    }
+    @keyframes floatIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .image-wrapper {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin: 0 0 15px;
+      color: #333;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 25px;
+    }
+    .cta-button {
+      background: linear-gradient(120deg, #ff512f, #dd2476);
+      color: white;
+      padding: 16px 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.3s, box-shadow 0.2s;
+      display: inline-block;
+      animation: pulse 1.5s infinite ease-in-out;
+      box-shadow: 0 8px 20px rgba(221, 36, 118, 0.4);
+    }
+    .cta-button:hover {
+      background: linear-gradient(120deg, #dd2476, #ff512f);
+      transform: scale(1.08);
+      box-shadow: 0 10px 24px rgba(255, 81, 47, 0.6);
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+    .flash {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #ff1744;
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border-radius: 20px;
+      animation: flashPulse 1.5s infinite;
+    }
+    @keyframes flashPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flash">Limited Time</div>
+    <div class="image-wrapper">
+      <a href="https://singingfiles.com/show.php?l=0&u=2378913&id=68749" target="_blank">
+        <img src="https://i.ibb.co.com/3mDsDLH2/e07c98eeb12b39838d4b74c808e7e797.png" alt="Offer Banner">
+      </a>
+    </div>
+    <h1>Start your ON THAT ASS Trial Now!</h1>
+    <p>Enter your credit card information now to get started.</p>
+    <a href="https://singingfiles.com/show.php?l=0&u=2378913&id=68749" class="cta-button" target="_blank">Claim Your Reward</a>
+  </div>
+</body>
+</html>
